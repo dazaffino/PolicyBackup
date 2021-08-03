@@ -1,0 +1,30 @@
+{
+ "properties": {
+  "displayName": "ZTech1-Test",
+  "policyType": "Custom",
+  "description": "Testing initiative",
+  "metadata": {
+   "category": "ZTechTest",
+   "createdBy": "fd4fd969-c806-491a-a9ef-b8384688d935",
+   "createdOn": "2020-05-22T20:55:40.5237969Z",
+   "updatedBy": null,
+   "updatedOn": null
+  },
+  "parameters": {},
+  "policyDefinitions": [
+   {
+    "policyDefinitionReferenceId": "13827664864127360451",
+    "policyDefinitionId": "/subscriptions/78e16342-a628-4f80-80a5-1c6029b2f955/providers/Microsoft.Authorization/policyDefinitions/DenyAllResources3",
+    "parameters": {}
+   },
+   {
+    "policyDefinitionReferenceId": "17855120121258090365",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/013e242c-8828-4970-87b3-ab247555486d",
+    "parameters": {}
+   }
+  ]
+ },
+ "id": "/subscriptions/78e16342-a628-4f80-80a5-1c6029b2f955/providers/Microsoft.Authorization/policySetDefinitions/2bc839f0-b004-4792-8890-576118c13047",
+ "type": "Microsoft.Authorization/policySetDefinitions",
+ "name": "2bc839f0-b004-4792-8890-576118c13047"
+}
