@@ -1,0 +1,45 @@
+{
+ "properties": {
+  "displayName": "Ztech-ZaffinoNSGTest-Nov24b",
+  "policyType": "Custom",
+  "mode": "All",
+  "metadata": {
+   "category": "ZTech Cloud Admin",
+   "createdBy": "fd4fd969-c806-491a-a9ef-b8384688d935",
+   "createdOn": "2020-11-24T14:20:07.0398063Z",
+   "updatedBy": "fd4fd969-c806-491a-a9ef-b8384688d935",
+   "updatedOn": "2020-11-24T16:07:12.4193812Z"
+  },
+  "parameters": {},
+  "policyRule": {
+   "if": {
+    "not": {
+     "allOf": [
+      {
+       "field": "type",
+       "equals": "Microsoft.Network/networkSecurityGroups"
+      },
+      {
+       "field": "Microsoft.Network/networkSecurityGroups/securityRules[*].protocol",
+       "notEquals": "TCP"
+      },
+      {
+       "field": "Microsoft.Network/networkSecurityGroups/securityRules[*].direction",
+       "notEquals": "Outbound"
+      },
+      {
+       "field": "Microsoft.Network/networkSecurityGroups/securityRules[*].access",
+       "notEquals": "Deny"
+      }
+     ]
+    }
+   },
+   "then": {
+    "effect": "audit"
+   }
+  }
+ },
+ "id": "/subscriptions/78e16342-a628-4f80-80a5-1c6029b2f955/providers/Microsoft.Authorization/policyDefinitions/0d9ea6c1-49d1-4903-ba3a-f5ca9b21fa08",
+ "type": "Microsoft.Authorization/policyDefinitions",
+ "name": "0d9ea6c1-49d1-4903-ba3a-f5ca9b21fa08"
+}
